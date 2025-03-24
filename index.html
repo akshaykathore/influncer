@@ -568,6 +568,22 @@
                         <div id="batch-management" class="tab-pane notika-tab-menu-bg animated flipInX">
                             <ul class="notika-main-menu-dropdown">
                                 <li><a href="create-batch.html">Create Batch</a></li>
+                                <div style="text-align: center; margin-top: 50px;">
+                                    <h4>Add New Batch</h4><br><br>
+                                    <form action="#" method="POST" style="display: inline-block; text-align: left;">
+                                        <label for="batchName">Batch Name:</label>
+                                        <input type="text" placeholder="Batch Name" id="batchName" name="batchName" required><br><br>
+                                        
+                                        <label for="startTime">Start Time:</label>
+                                        <input type="time" id="startTime" name="startTime" required><br><br>
+                                    
+                                        <label for="endTime">End Time:</label>
+                                        <input type="time" id="endTime" name="endTime" required><br><br>
+                                    
+                                        <input type="submit" value="Add Batch">
+                                    </form>
+                                </div>
+                                
                                     <li><a href="manage-batch.html">Manage Batch</a></li>
                                      <!-- <li><a href="flot-charts.html">Flot Charts</a></li>
                                         <li><a href="bar-charts.html">Bar Charts</a></li>
