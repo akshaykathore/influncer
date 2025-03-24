@@ -3572,7 +3572,10 @@ textarea.auto-size {
 .login-content, .error-page-area{
     min-height:100vh;
     text-align:center;
-    background-color:#00c292;
+    background-image: url('./images/sort_asc.png');
+    background-repeat: no-repeat;
+  background-size: auto;
+  object-fit: contain;
 }
 .login-content:before, .error-page-area:before{
     content:'';
