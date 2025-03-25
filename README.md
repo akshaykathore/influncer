@@ -1,2 +1,0 @@
-# influncer
-inlfulncer app 
