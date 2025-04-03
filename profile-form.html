@@ -232,66 +232,145 @@
 			</div>
 			<div class="main-panel">
 				<div class="content">
-                    <div class="container mt-0">
-                        <h2 class="text-left card-header mb-0">Create Campaign</h2>
+                    <div class="container mt-4">
+                        <h2 class="text-center mb-4">Profile Form</h2>
                         
                         <form action="#" method="post" enctype="multipart/form-data">
                     
                             <!-- Campaign Details -->
                             <div class="card mb-4">
-                                <div class="card-header">Campaign Details</div>
+                                <div class="card-header">Basic Informantion</div>
                                 <div class="card-body">
                                     <div class="mb-3">
-                                        <label class="form-label">Campaign Name</label>
-                                        <input type="text" class="form-control" name="campaign_name" required>
+                                        <label class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" name="full name" required>
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label">Brand Name</label>
-                                        <input type="text" class="form-control" name="brand_name" required>
+                                        <label class="form-label">Username</label>
+                                        <input type="text" class="form-control" name="username" required>
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label">Campaign Type</label>
-                                        <select class="form-select" name="campaign_type" required>
-                                            <option>Sponsored Post</option>
-                                            <option>Giveaway</option>
-                                            <option>Product Review</option>
-                                            <option>Event Promotion</option>
-                                        </select>
+                                        <label class="form-label">Email Address</label>
+                                        <input type="text" class="form-control" name="Email Address" required>
+                                    </div>
+									<div class="mb-3">
+                                        <label class="form-label">Phone Number</label>
+                                        <input type="text" class="form-control" name="Phone number" required>
+                                    </div>
+									<div class="mb-3">
+                                        <label class="form-label">Profile Picture</label>
+                                        <input type="file" class="form-control" name="brand_guidelines" accept=".pdf, .doc, .jpg, .png">
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label">Campaign Description</label>
+                                        <label class="form-label">Bio(short description)</label>
                                         <textarea class="form-control" name="campaign_description" rows="4" required></textarea>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label">Start Date</label>
-                                        <input type="date" class="form-control" name="start_date" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label">End Date</label>
-                                        <input type="date" class="form-control" name="end_date" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label">Target Platform</label>
-                                        <select class="form-select" name="target_platform[]"required>
-                                            <option>Instagram</option>
-                                            <option>YouTube</option>
-                                            <option>TikTok</option>
-                                            <option>Twitter</option>
-                                        </select>
                                     </div>
                                 </div>
                             </div>
                     
                             <!-- Budget & Payment -->
                             <div class="card mb-4">
-                                <div class="card-header">Budget & Payment</div>
+                                <div class="card-header">Social Media Handles</div>
                                 <div class="card-body">
                                     <div class="mb-3">
-                                        <label class="form-label">Budget Range ($)</label>
-                                        <input type="number" class="form-control" name="budget_range" required>
+                                        <label class="form-label">Instagram Username</label>
+                                        <input type="text" class="form-control" name="Instagram Username" required>
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label">Payment Method</label>
+                                        <label class="form-label">YouTube Channel Link</label>
+                                        <input type="text" class="form-control" name="Instagram Username" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">TikTok Username</label>
+                                        <input type="text" class="form-control" name="Instagram Username" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Twitter(x) Handle</label>
+                                        <input type="text" class="form-control" name="Instagram Username" required>
+                                    </div>
+									<div class="mb-3">
+                                        <label class="form-label">Facebook Page Link</label>
+                                        <input type="text" class="form-control" name="Instagram Username" required>
+                                    </div>
+									<div class="mb-3">
+                                        <label class="form-label">Linkedin Profile</label>
+                                        <input type="text" class="form-control" name="Instagram Username" required>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Content Requirements -->
+                            <div class="card mb-4">
+                                <div class="card-header">Audience Insights</div>
+                                <div class="card-body">
+									<div class="mb-3">
+                                        <label class="form-label">Total Followers</label>
+                                        <input type="text" class="form-control" name="Total Followers" placeholder="Followers in number's">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Engagement Rate(%)</label>
+                                        <input type="text" class="form-control" name="hashtags" placeholder="Rating in(%)">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Average Likes Per Post</label>
+                                        <input type="text" class="form-control" name="mentions" placeholder="Like's">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Average Comments Per Post</label>
+                                        <input type="text" class="form-control" name="mentions" placeholder="Comment's">
+                                    </div>
+                                </div>
+                            </div>
+
+							<div class="card mb-4">
+                                <div class="card-header">Collaboration Details</div>
+                                <div class="card-body">
+									<div class="form-check">
+										<label>Preferred Collaboration Type</label><br/>
+										<label class="form-radio-label">
+											<input class="form-radio-input" type="radio" name="optionsRadios" value=""  checked="">
+											<span class="form-radio-sign">Paid</span>
+										</label>
+										<label class="form-radio-label ml-3">
+											<input class="form-radio-input" type="radio" name="optionsRadios" value="">
+											<span class="form-radio-sign">Barter</span>
+										</label>
+										<label class="form-radio-label ml-3">
+											<input class="form-radio-input" type="radio" name="optionsRadios" value="">
+											<span class="form-radio-sign">Sponsorships</span>
+										</label>
+									</div>
+                                    <div class="form-check">
+										<label>Pricing for Promotions</label><br/>
+										<label class="form-radio-label">
+											<input class="form-radio-input" type="radio" name="optionsRadios" value=""  checked="">
+											<span class="form-radio-sign">Deop Dwon</span>
+										</label>
+										<label class="form-radio-label ml-3">
+											<input class="form-radio-input" type="radio" name="optionsRadios" value="">
+											<span class="form-radio-sign">Input Field</span>
+										</label>
+									</div>
+                                    <div class="form-check">
+										<label>Availability for Brand Deals</label><br/>
+										<label class="form-radio-label">
+											<input class="form-radio-input" type="radio" name="optionsRadios" value=""  checked="">
+											<span class="form-radio-sign">Yes</span>
+										</label>
+										<label class="form-radio-label ml-3">
+											<input class="form-radio-input" type="radio" name="optionsRadios" value="">
+											<span class="form-radio-sign">No</span>
+										</label>
+									</div>
+                                </div>
+                            </div>
+                    
+                            <!-- Audience Targeting -->
+                            <div class="card mb-4">
+                                <div class="card-header">Payment Informantion</div>
+                                <div class="card-body">
+									<div class="mb-3">
+                                        <label class="form-label">Preferred Payment Method</label>
                                         <select class="form-select" name="payment_method" required>
                                             <option>Bank Transfer</option>
                                             <option>PayPal</option>
@@ -299,81 +378,46 @@
                                         </select>
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label">Advance Payment?</label>
-                                        <select class="form-select" name="advance_payment" required>
-                                            <option>Yes</option>
-                                            <option>No</option>
+                                        <label class="form-label">Bank Account Details</label>
+                                        <select class="form-select" name="payment_method" required>
+                                            <option>Direct</option>
+                                            <option>Transfer</option>
                                         </select>
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label">Payment Terms</label>
-                                        <select class="form-select" name="payment_terms" required>
-                                            <option>On Completion</option>
-                                            <option>50% Advance</option>
-                                        </select>
+                                        <label class="form-label">GST Number</label>
+                                        <input type="text" class="form-control" name="target_interests">
                                     </div>
                                 </div>
                             </div>
-                    
-                            <!-- Content Requirements -->
-                            <div class="card mb-4">
-                                <div class="card-header">Content Requirements</div>
+
+							<div class="card mb-4">
+                                <div class="card-header">Additional Details</div>
                                 <div class="card-body">
-                                    <div class="mb-3">
-                                        <label class="form-label">Post Type</label>
+									<div class="mb-3">
+                                        <label class="form-label">Location</label>
+                                        <input type="text" class="form-control" name="Total Followers" placeholder="City or Country">
+                                    </div>
+									<div class="mb-3">
+                                        <label class="form-label">Content Category</label>
                                         <select class="form-select" name="post_type" required>
-                                            <option>Story</option>
-                                            <option>Reel</option>
-                                            <option>IGTV</option>
-                                            <option>Carousel</option>
-                                            <option>Blog</option>
+                                            <option>Fashion</option>
+                                            <option>Tech</option>
+											<option>Fitness</option>
                                         </select>
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label">Hashtags to Use</label>
-                                        <input type="text" class="form-control" name="hashtags" placeholder="Comma-separated">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label">Mentions (@usernames)</label>
+                                        <label class="form-label">Languages Spoken</label>
                                         <input type="text" class="form-control" name="mentions">
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label">Upload Brand Guidelines</label>
+                                        <label class="form-label">Portfolio Upload (PDF or Link)</label>
                                         <input type="file" class="form-control" name="brand_guidelines" accept=".pdf, .doc, .jpg, .png">
                                     </div>
-                                    <div class="mb-3">
-                                        <label class="form-label">Reference Links</label>
-                                        <input type="url" class="form-control" name="reference_links" placeholder="Enter links">
-                                    </div>
                                 </div>
                             </div>
                     
-                            <!-- Audience Targeting -->
-                            <div class="card mb-4">
-                                <div class="card-header">Audience Targeting</div>
-                                <div class="card-body">
-                                    <div class="mb-3">
-                                        <label class="form-label">Target Age Group</label>
-                                        <select class="form-select" name="target_age_group" required>
-                                            <option>13-18</option>
-                                            <option>19-24</option>
-                                            <option>25-34</option>
-                                            <option>35-44</option>
-                                            <option>45+</option>
-                                        </select>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label">Target Location</label>
-                                        <input type="text" class="form-control" name="target_location" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label">Target Interests</label>
-                                        <input type="text" class="form-control" name="target_interests" placeholder="Fashion, Tech, Fitness">
-                                    </div>
-                                </div>
-                            </div>
-                    
-                            <button type="submit" class="btn btn-primary w-100">Submit Campaign</button>
+                            <button type="submit" class="btn btn-primary w-100">Submit</button>
                     
                         </form>
                     </div>
