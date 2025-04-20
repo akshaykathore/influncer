@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .profile-card {
+      background: white;
+      width: 300px;
+      border-radius: 20px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    .settings-icon {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+    .notification-icon {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+    .notification-icon span {
+      background: red;
+      color: white;
+      border-radius: 50%;
+      padding: 2px 6px;
+      font-size: 12px;
+      position: absolute;
+      top: -8px;
+      right: -8px;
+    }
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .username {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .handle {
+      color: gray;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+    .stat {
+      text-align: center;
+    }
+    .stat b {
+      display: block;
+      font-size: 16px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-around;
+    }
+    .buttons button {
+      background: #f0f0f0;
+      border: none;
+      border-radius: 20px;
+      padding: 8px 14px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .buttons .active {
+      background: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <div class="settings-icon">⚙️</div>
+    <div class="notification-icon">🔔<span>8</span></div>
+    <img class="avatar" src="https://via.placeholder.com/100x100.png?text=Photo" alt="Profile">
+    <div class="username">Friedrich Beren</div>
+    <div class="handle">@friedrich_beren</div>
+    <div class="stats">
+      <div class="stat"><b>28k</b>Followers</div>
+      <div class="stat"><b>13</b>Avg. posts</div>
+      <div class="stat"><b>734k</b>Likes</div>
+      <div class="stat"><b>983k</b>Views</div>
+    </div>
+    <div class="buttons">
+      <button class="active">Updates</button>
+      <button>Collections</button>
+      <button>About</button>
+    </div>
+  </div>
+</body>
+</html>
