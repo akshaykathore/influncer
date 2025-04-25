@@ -173,7 +173,7 @@
 								<span class="badge badge-count"></span>
 							</a>
 						</li>
-						<li class="nav-item">
+						<!--<li class="nav-item">
 							<a href="components.html">
 								<i class="la la-table"></i>
 								<p>Campaigns Listing</p>
@@ -213,7 +213,7 @@
 								<i class="la la-fonticons"></i>
 								<p>Icons</p>
 							</a>
-						</li>
+						</li>-->
 						<li class="nav-item">
 							<a href="profile-form.html">
 								<i class="la la-fonticons"></i>
@@ -228,11 +228,10 @@
 						</li>
 						<li class="nav-item">
 							<a href="chatboot.html">
-							  <i class="bi bi-whatsapp"></i>
-							  <span class="fa fa-whatsapp"></span>
+							  <i class="la la-whatsapp"></i>
 							  <p>Chatbot</p>
 							</a>
-						  </li>
+							</li>
 					</ul>
 				</div>
 			</div>
@@ -384,216 +383,285 @@
                         </form>
                     </div>
 				</div>
-				  <style>
-					body {
-					  margin: 0;
-					  padding: 0;
-					  font-family: Arial, sans-serif;
-					  background-color: #f8f9fa;
-					}
-				
-					.center-wrapper {
-					  display: flex;
-					  justify-content: center;
-					  align-items: center;
-					  padding: 40px 20px;
-					  min-height: 100vh; /* Optional: center vertically too */
-					}
-				
-					table {
-					  border: 1px solid #ddd;
-					  border-collapse: collapse;
-					  width: 100%;
-					  max-width: 1200px;
-					  background-color: #fff;
-					  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-					}
-				
-					th, td {
-					  border: 1px solid #ccc;
-					  padding: 12px;
-					  text-align: left;
-					  vertical-align: top;
-					}
-				
-					th {
-					  background-color: #f2f2f2;
-					}
-				
-					tr:nth-child(even) {
-					  background-color: #f9f9f9;
-					}
-				  </style>
-				</head>
-				<body>
-				
-				  <div class="center-wrapper">
-					<!-- Paste your table here -->
-					<table>
-					  <thead style="background-color: #f2f2f2;">
-						<tr>
-						  <th>Section</th>
-						  <th>Field Label</th>
-						  <th>Input Type</th>
-						  <th>Name Attribute</th>
-						  <th>Required</th>
-						  <th>Options / Notes</th>
-						</tr>
-					  </thead>
-					  <tbody>
-						<!-- All your existing table rows remain unchanged -->
-						<tr>
-						  <td rowspan="7">Campaign Details</td>
-						  <td>Campaign Name</td>
-						  <td>Text</td>
-						  <td>campaign_name</td>
-						  <td>Yes</td>
-						  <td></td>
-						</tr>
-						<tr>
-						  <td>Brand Name</td>
-						  <td>Text</td>
-						  <td>brand_name</td>
-						  <td>Yes</td>
-						  <td></td>
-						</tr>
-						<tr>
-						  <td>Campaign Type</td>
-						  <td>Select</td>
-						  <td>campaign_type</td>
-						  <td>Yes</td>
-						  <td>Sponsored Post, Giveaway, Product Review, Event Promotion</td>
-						</tr>
-						<tr>
-						  <td>Campaign Description</td>
-						  <td>Textarea</td>
-						  <td>campaign_description</td>
-						  <td>Yes</td>
-						  <td></td>
-						</tr>
-						<tr>
-						  <td>Start Date</td>
-						  <td>Date</td>
-						  <td>start_date</td>
-						  <td>Yes</td>
-						  <td></td>
-						</tr>
-						<tr>
-						  <td>End Date</td>
-						  <td>Date</td>
-						  <td>end_date</td>
-						  <td>Yes</td>
-						  <td></td>
-						</tr>
-						<tr>
-						  <td>Target Platform</td>
-						  <td>Select (multiple)</td>
-						  <td>target_platform[]</td>
-						  <td>Yes</td>
-						  <td>Instagram, YouTube, TikTok, Twitter</td>
-						</tr>
-				
-						<tr>
-						  <td rowspan="4">Budget & Payment</td>
-						  <td>Budget Range ($)</td>
-						  <td>Number</td>
-						  <td>budget_range</td>
-						  <td>Yes</td>
-						  <td></td>
-						</tr>
-						<tr>
-						  <td>Payment Method</td>
-						  <td>Select</td>
-						  <td>payment_method</td>
-						  <td>Yes</td>
-						  <td>Bank Transfer, PayPal, UPI</td>
-						</tr>
-						<tr>
-						  <td>Advance Payment?</td>
-						  <td>Select</td>
-						  <td>advance_payment</td>
-						  <td>Yes</td>
-						  <td>Yes / No</td>
-						</tr>
-						<tr>
-						  <td>Payment Terms</td>
-						  <td>Select</td>
-						  <td>payment_terms</td>
-						  <td>Yes</td>
-						  <td>On Completion, 50% Advance</td>
-						</tr>
-				
-						<tr>
-						  <td rowspan="5">Content Requirements</td>
-						  <td>Post Type</td>
-						  <td>Select</td>
-						  <td>post_type</td>
-						  <td>Yes</td>
-						  <td>Story, Reel, IGTV, Carousel, Blog</td>
-						</tr>
-						<tr>
-						  <td>Hashtags to Use</td>
-						  <td>Text</td>
-						  <td>hashtags</td>
-						  <td>No</td>
-						  <td>Comma-separated</td>
-						</tr>
-						<tr>
-						  <td>Mentions (@usernames)</td>
-						  <td>Text</td>
-						  <td>mentions</td>
-						  <td>No</td>
-						  <td></td>
-						</tr>
-						<tr>
-						  <td>Upload Brand Guidelines</td>
-						  <td>File</td>
-						  <td>brand_guidelines</td>
-						  <td>No</td>
-						  <td>Accepts .pdf, .doc, .jpg, .png</td>
-						</tr>
-						<tr>
-						  <td>Reference Links</td>
-						  <td>URL</td>
-						  <td>reference_links</td>
-						  <td>No</td>
-						  <td></td>
-						</tr>
-				
-						<tr>
-						  <td rowspan="3">Audience Targeting</td>
-						  <td>Target Age Group</td>
-						  <td>Select</td>
-						  <td>target_age_group</td>
-						  <td>Yes</td>
-						  <td>13-18, 19-24, 25-34, 35-44, 45+</td>
-						</tr>
-						<tr>
-						  <td>Target Location</td>
-						  <td>Text</td>
-						  <td>target_location</td>
-						  <td>Yes</td>
-						  <td></td>
-						</tr>
-						<tr>
-						  <td>Target Interests</td>
-						  <td>Text</td>
-						  <td>target_interests</td>
-						  <td>No</td>
-						  <td>Example: Fashion, Tech, Fitness</td>
-						</tr>
-				
-						<tr>
-						  <td>Submit</td>
-						  <td colspan="5">Button (type="submit") — Full Width</td>
-						</tr>
-					  </tbody>
-					</table>
-				  </div>
-				
-				</body>
-				</html>
-				<footer class="footer">
+				<!-- <div class="container mt-5">
+					<div class="row justify-content-center">
+						<div class="col-md-8">
+							<div class="card mb-4">
+								<div class="card-header text-center">Campaign Details Table Format</div>
+								<div class="card-body">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th>Field</th>
+												<th>Input</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th>Campaign Name</th>
+												<td><input type="text" class="form-control" name="campaign_name" required></td>
+											</tr>
+											<tr>
+												<th>Brand Name</th>
+												<td><input type="text" class="form-control" name="brand_name" required></td>
+											</tr>
+											<tr>
+												<th>Campaign Type</th>
+												<td>
+													<select class="form-select" name="campaign_type" required>
+														<option>Sponsored Post</option>
+														<option>Giveaway</option>
+														<option>Product Review</option>
+														<option>Event Promotion</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<th>Campaign Description</th>
+												<td><textarea class="form-control" name="campaign_description" rows="4" required></textarea></td>
+											</tr>
+											<tr>
+												<th>Start Date</th>
+												<td><input type="date" class="form-control" name="start_date" required></td>
+											</tr>
+											<tr>
+												<th>End Date</th>
+												<td><input type="date" class="form-control" name="end_date" required></td>
+											</tr>
+											<tr>
+												<th>Target Platform</th>
+												<td>
+													<select class="form-select" name="target_platform[]" required>
+														<option>Instagram</option>
+														<option>YouTube</option>
+														<option>TikTok</option>
+														<option>Twitter</option>
+													</select>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+  <title>Campaign Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <!-- <table>
+    <tr>
+      <th>ID</th>
+      <th>Campaign Name</th>
+      <th>Brand Name</th>
+      <th>Campaign Type</th>
+      <th>Campaign Description</th>
+      <th>Action</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td></td>
+      <td></td>
+	  <td>
+		<select class="form-select" name="campaign_type" required>
+			<option>Sponsored Post</option>
+			<option>Giveaway</option>
+			<option>Product Review</option>
+			<option>Event Promotion</option>
+		</select>
+	</td>
+      <td></td>
+      <td><select class="form-select" name="target_platform[]" required>
+		<option>Instagram</option>
+		<option>YouTube</option>
+		<option>TikTok</option>
+		<option>Twitter</option>
+	</select></td>
+    </tr>
+	<tr>
+		<td>2</td>
+		<td></td>
+		<td></td>
+		<td>
+			<select class="form-select" name="campaign_type" required>
+				<option>Sponsored Post</option>
+				<option>Giveaway</option>
+				<option>Product Review</option>
+				<option>Event Promotion</option>
+			</select>
+		</td>
+		<td></td>
+		<td>
+			<select class="form-select" name="target_platform[]" required>
+				<option>Instagram</option>
+				<option>YouTube</option>
+				<option>TikTok</option>
+				<option>Twitter</option>
+			</select>
+		</td>
+	  </tr>
+	  <tr>
+		<td>3</td>
+		<td></td>
+		<td></td>
+		<td>
+			<select class="form-select" name="campaign_type" required>
+				<option>Sponsored Post</option>
+				<option>Giveaway</option>
+				<option>Product Review</option>
+				<option>Event Promotion</option>
+			</select>
+		</td>
+		<td></td>
+		<td>
+			<select class="form-select" name="target_platform[]" required>
+				<option>Instagram</option>
+				<option>YouTube</option>
+				<option>TikTok</option>
+				<option>Twitter</option>
+			</select>
+		</td>
+	  </tr>
+  	</table> -->
+	
+	  <title>Campaign Table</title>
+	  <style>
+		body {
+		  font-family: Arial, sans-serif;
+		  background-color: #f4f4f4;
+		  padding: 20px;
+		}
+	
+		.table-card {
+		  background: #fff;
+		  border-radius: 10px;
+		  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		  overflow-x: auto;
+		  padding: 20px;
+		}
+	
+		table {
+		  width: 100%;
+		  border-collapse: collapse;
+		}
+	
+		th, td {
+		  padding: 12px 15px;
+		  border: 1px solid #ddd;
+		  text-align: left;
+		}
+	
+		th {
+		  background-color: #f0f0f0;
+		  font-weight: bold;
+		}
+	
+		tr:hover {
+		  background-color: #f9f9f9;
+		}
+	  </style>
+	</head>
+	<body>
+	
+	<div class="table-card">
+	  <table>
+		<thead>
+		  <tr>
+			<th>ID</th>
+			<th>Campaign Name</th>
+			<th>Brand Name</th>
+			<th>Campaign Type</th>
+			<th>Campaign Description</th>
+			<!-- <th>Start Date</th>
+			<th>End Date</th> -->
+			<th>Action</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr>
+			<td>1</td>
+			<td>Spring Sale</td>
+			<td>Nike</td>
+			<td>
+				<select class="form-select" name="campaign_type" required>
+					<option>Sponsored Post</option>
+					<option>Giveaway</option>
+					<option>Product Review</option>
+					<option>Event Promotion</option>
+				</select>
+			</td>
+			<td>Discounts on sportswear</td>
+			<!-- <td>2025-03-01</td>
+			<td>2025-03-31</td> -->
+			<td>
+				<select class="form-select" name="target_platform[]" required>
+					<option>Instagram</option>
+					<option>YouTube</option>
+					<option>TikTok</option>
+					<option>Twitter</option>
+				</select>
+			</td>
+		  </tr>
+		  <tr>
+			<td>2</td>
+			<td>Spring Sale</td>
+			<td>Nike</td>
+			<td>
+				<select class="form-select" name="campaign_type" required>
+					<option>Sponsored Post</option>
+					<option>Giveaway</option>
+					<option>Product Review</option>
+					<option>Event Promotion</option>
+				</select>
+			</td>
+			<td>Discounts on sportswear</td>
+			<!-- <td>2025-03-01</td>
+			<td>2025-03-31</td> -->
+			<td><select class="form-select" name="target_platform[]" required>
+				<option>Instagram</option>
+				<option>YouTube</option>
+				<option>TikTok</option>
+				<option>Twitter</option>
+			</select></td>
+		  </tr>
+		  <tr>
+			<td>3</td>
+			<td>Spring Sale</td>
+			<td>Nike</td>
+			<td>
+				<select class="form-select" name="campaign_type" required>
+					<option>Sponsored Post</option>
+					<option>Giveaway</option>
+					<option>Product Review</option>
+					<option>Event Promotion</option>
+				</select>
+			</td>
+			<td>Discounts on sportswear</td>
+			<!-- <td>2025-03-01</td>
+			<td>2025-03-31</td> -->
+			<td><select class="form-select" name="target_platform[]" required>
+				<option>Instagram</option>
+				<option>YouTube</option>
+				<option>TikTok</option>
+				<option>Twitter</option>
+			</select></td>
+		  </tr>
+		</tbody>
+	  </table>
+	</div>
+	<footer class="footer">
 					<div class="container-fluid">
 						<nav class="pull-left">
 							<ul class="nav">
