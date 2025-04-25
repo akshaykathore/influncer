@@ -558,24 +558,39 @@
               </ul>              
             </aside>
             <main class="chat-main">
-              <header>
-                <h4>Aiden Chavez</h4>
-                <div class="last-seen">Last seen: 2 hours ago</div>
-              </header>
-              <div class="chat-options">
+              <header style="display: flex; align-items: left; gap: 10px;">
+                <img src="assets/img/profile2.jpg" alt="Aiden Profile" style="width: 40px; height: 40px; border-radius: 50%;">
+                <div>
+                  <h4 style="margin: 0;">Aiden Chavez</h4>
+                  <div class="last-seen">Last seen: 2 hours ago</div>
+                </div>
+              </header>              
+              <!-- <div class="chat-options">
                 <button>📷</button>
                 <button>📁</button>
                 <button>❓</button>
-              </div>
+              </div> -->
               <div class="messages">
                 <div class="message sent">Hi Aiden, how are you? How is the project coming along?</div>
                 <div class="message received">Are we meeting today?</div>
                 <div class="message received">Project has been already finished and I have results to show you.</div>
               </div>
               <footer>
+                <button id="toggleOptionsBtn" title="More Options">+</button>
+                <div id="extraOptions" style="display: none; gap: 10px; align-items: center;">
+                  <label for="cameraInput" title="Open Camera">
+                    <i class="fas fa-camera" style="cursor: pointer;"></i>
+                  </label>
+                  <input type="file" accept="image/*" capture="environment" id="cameraInput" style="display: none;" />
+              
+                  <label for="fileInput" title="Upload File">
+                    <i class="fas fa-paperclip" style="cursor: pointer;"></i>
+                  </label>
+                  <input type="file" id="fileInput" style="display: none;" />
+                </div>
                 <input type="text" placeholder="Enter text here..." id="messageInput" />
                 <button id="sendBtn">➤</button>
-              </footer>
+              </footer>              
             </main>
           </div>
         </div>
@@ -587,7 +602,7 @@
   <script src="assets/js/core/jquery.3.2.1.min.js"></script>
   <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
   <script src="assets/js/core/bootstrap.min.js"></script>
-  <script>
+  <!-- <script>
     document.getElementById("sendBtn").addEventListener("click", function () {
       const input = document.getElementById("messageInput");
       const message = input.value.trim();
@@ -601,6 +616,25 @@
         messagesDiv.scrollTop = messagesDiv.scrollHeight;
       }
     });
-  </script>
+  </script> -->
+  <script>
+    document.getElementById("toggleOptionsBtn").addEventListener("click", function () {
+      const options = document.getElementById("extraOptions");
+      if (options.style.display === "none") {
+        options.style.display = "flex";
+      } else {
+        options.style.display = "none";
+      }
+    });
+  
+    // Optional: handle camera and file input events
+    document.getElementById("cameraInput").addEventListener("change", function () {
+      alert("Camera image selected!");
+    });
+  
+    document.getElementById("fileInput").addEventListener("change", function () {
+      alert("File selected!");
+    });
+  </script>  
 </body>
 </html>
