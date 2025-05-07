@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration-Sign Up</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #b9d7f3, #a8c6f0);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      background: #fff;
+      display: flex;
+      width: 90%;
+      max-width: 900px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .left {
+      padding: 40px;
+      width: 50%;
+    }
+
+    .left h2 {
+      margin-bottom: 10px;
+    }
+
+    .left p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .form input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .password-info {
+      font-size: 12px;
+      color: green;
+      margin-bottom: 10px;
+    }
+
+    .signup-btn {
+  display: block;
+  width: fit-content;
+  padding: 12px 24px;
+  margin: 10px auto; 
+  background-color: #4a63f3;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none; 
+  cursor: pointer;
+}
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .socials img {
+      width: 24px;
+      cursor: pointer;
+    }
+
+    .signin-link {
+      text-align: center;
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    .signin-link a {
+      color: #4a63f3;
+      text-decoration: none;
+    }
+
+    .right {
+      background: linear-gradient(to bottom right, #4a63f3, #5b82ff);
+      color: white;
+      width: 50%;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .right h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .right p {
+      font-size: 14px;
+    }
+
+    @media(max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left, .right {
+        width: 100%;
+      }
+
+      .right {
+        display: none; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h2>Sign Up</h2>
+      <p>Secure Your Communication with Earnest</p>
+      <div class="form">
+        <input type="text" placeholder="Full Name" />
+        <input type="email" placeholder="Email Address" />
+        <input type="password" placeholder="Password" />
+        <div class="password-info">✓ 8 characters minimum<br>✓ Includes uppercase & number</div>
+        <input type="password" placeholder="Re-Type Password" />
+        <a href="index.html" id="signup-link" class="signup-btn">Sign Up</a>
+      </div>
+      <div class="socials">
+        <img src="https://img.icons8.com/color/48/google-logo.png" alt="Google" />
+        <img src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook" />
+      </div>
+      <p class="signin-link">Already a member? <a href="Influencer Login.html">Sign in</a></p>
+    </div>
+
+    <div class="right">
+      <img src="https://img.icons8.com/ios-filled/100/ffffff/network.png" alt="Network Icon" style="width: 60px; margin-bottom: 20px;"/>
+      <h3>Welcome to ...</h3>
+      <p>Connect with others securely and grow your network.</p>
+    </div>    
+  </div>
+</body>
+</html>
