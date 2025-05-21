@@ -11,159 +11,6 @@
   <link rel="stylesheet" href="assets/css/demo.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   
-  <!-- <style>
-    .chat-container {
-      display: flex;
-      height: calc(100vh - 70px); /* Adjust for navbar height */
-      background: #f2f2f2;
-    }
-
-    .sidebar-chat {
-      width: 250px;
-      background: #eee;
-      padding: 10px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .sidebar-chat .search {
-      padding: 8px;
-      margin-bottom: 10px;
-      border: none;
-      border-radius: 4px;
-    }
-
-    .contacts {
-      list-style: none;
-      padding: 0;
-    }
-
-    .contacts li {
-      padding: 10px;
-      margin: 5px 0;
-      background: #dcdcdc;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .contacts .active {
-      background-color: #999;
-      color: white;
-    }
-    /* Style for the entire contact list */
-  .contacts {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: #f9f9f9; /* background for the contact list */
-    border-radius: 5px;
-  }
-
-  /* Style each contact item */
-  .contacts li {
-    color: #333; /* text color */
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-
-  /* Icon color */
-  .contacts li i {
-    color: #888;
-  }
-
-  /* Active contact */
-  .contacts li.active {
-    background-color: #e0f3ff;
-    color: #007bff;
-    font-weight: bold;
-  }
-
-  /* Hover effect */
-  .contacts li:hover {
-    background-color: #eaeaea;
-  }
-    .chat-main {
-      flex: 1;
-      background: white;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .chat-main header {
-      padding: 15px;
-      border-bottom: 1px solid #ccc;
-    }
-
-    .last-seen {
-      font-size: 14px;
-      color: gray;
-    }
-
-    .chat-options {
-      padding: 10px;
-      display: flex;
-      gap: 10px;
-    }
-
-    .chat-options button {
-      background: none;
-      border: none;
-      font-size: 18px;
-      cursor: pointer;
-    }
-
-    .messages {
-      flex: 1;
-      padding: 20px;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .message {
-      max-width: 60%;
-      margin-bottom: 15px;
-      padding: 10px;
-      border-radius: 10px;
-    }
-
-    .sent {
-      background-color: #cce5ff;
-      align-self: flex-end;
-    }
-
-    .received {
-      background-color: #e2e2e2;
-      align-self: flex-start;
-    }
-
-    footer {
-      padding: 10px;
-      display: flex;
-      border-top: 1px solid #ccc;
-    }
-
-    footer input {
-      flex: 1;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    footer button {
-      margin-left: 10px;
-      padding: 10px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  </style> -->
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -313,8 +160,6 @@
 </head>
 <body>
   <div class="wrapper">
-    <!-- Include your main-header and sidebar as per your original layout -->
-    <!-- Assuming this is inside the dashboard layout -->
     <div class="wrapper">
       <div class="main-header">
         <div class="logo-header">
@@ -537,6 +382,14 @@
                   <i class="la la-whatsapp"></i>
                   <p>Chatbot</p>
                 </a>
+              </li>    
+            <li class="nav-item">
+							<a href="My Campaigns.html">
+							  <i class="la la-fonticons"></i>
+							  <p>My Campaigns</p>
+							</a>
+						</li>
+                </a>
               </li>
             </ul>
           </div>
@@ -559,18 +412,14 @@
               </ul>              
             </aside>
             <main class="chat-main">
-              <header style="display: flex; align-items: left; gap: 10px;">
-                <img src="assets/img/profile2.jpg" alt="Aiden Profile" style="width: 40px; height: 40px; border-radius: 50%;">
-                <div>
-                  <h4 style="margin: 0;">Aiden Chavez</h4>
-                  <div class="last-seen">Last seen: 2 hours ago</div>
-                </div>
-              </header>              
-              <!-- <div class="chat-options">
-                <button>📷</button>
-                <button>📁</button>
-                <button>❓</button>
-              </div> -->
+              <header style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                  <img src="assets/img/profile2.jpg" alt="Aiden Profile"
+                  style="width: 40px; height: 40px; border-radius: 50%;">
+              <div>
+            <h4 style="margin: 0;">Aiden Chavez</h4>
+          <div class="last-seen">Last seen: 2 hours ago</div>
+        </div>
+            </header>             
               <div class="messages">
                 <div class="message sent">Hi Aiden, how are you? How is the project coming along?</div>
                 <div class="message received">Are we meeting today?</div>
@@ -603,21 +452,6 @@
   <script src="assets/js/core/jquery.3.2.1.min.js"></script>
   <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
   <script src="assets/js/core/bootstrap.min.js"></script>
-  <!-- <script>
-    document.getElementById("sendBtn").addEventListener("click", function () {
-      const input = document.getElementById("messageInput");
-      const message = input.value.trim();
-      if (message) {
-        const messagesDiv = document.querySelector(".messages");
-        const newMessage = document.createElement("div");
-        newMessage.className = "message sent";
-        newMessage.textContent = message;
-        messagesDiv.appendChild(newMessage);
-        input.value = "";
-        messagesDiv.scrollTop = messagesDiv.scrollHeight;
-      }
-    });
-  </script> -->
   <script>
     document.getElementById("toggleOptionsBtn").addEventListener("click", function () {
       const options = document.getElementById("extraOptions");
